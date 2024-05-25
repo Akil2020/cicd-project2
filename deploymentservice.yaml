@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-k8s
-          image: akshu20791/node-app-test-new:latest # Image that will be used to containers in the cluster
+          image: akil1991/node-app-test-new:latest # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000 # The port that the container is running on in the cluster
