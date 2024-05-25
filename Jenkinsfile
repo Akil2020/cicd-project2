@@ -48,7 +48,7 @@ pipeline {
                          //sh "ssh -o StrictHostKeyChecking=no ubuntu@172.31.36.171 wget https://raw.githubusercontent.com/akshu20791/cicd-project2/master/docker-compose.yaml"
                          //sh "ssh -o StrictHostKeyChecking=no ubuntu@172.31.36.171 chmod 777 docker-compose.yaml"
                          //sh "ssh -o StrictHostKeyChecking=no ubuntu@172.31.36.171 ${dockerCmd}"
-                         sh "wget https://github.com/Akil2020/cicd-project2/blob/master/docker-compose.yaml"
+                         sh "wget https://raw.githubusercontent.com/Akil2020/cicd-project2/master/docker-compose.yaml"
                          sh "chmod 777 docker-compose.yaml"
                          sh "docker-compose up -d"
                     //}
