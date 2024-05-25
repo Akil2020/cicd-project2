@@ -38,9 +38,9 @@ pipeline {
         }
        stage('Deploy') {
             steps {
-               script {
+               //script {
                   // def dockerbuild = 'docker-compose build'
-                    def dockerCmd = 'docker-compose up -d'
+                    //def dockerCmd = 'docker-compose up -d'
                     //sshagent(['sshkeypair']) {
                         //chnage the private ip in below code
                         // sh "docker run -itd --name My-first-containe211 -p 8082:80 akshu20791/2febimg:v1"
@@ -50,8 +50,8 @@ pipeline {
                          //sh "ssh -o StrictHostKeyChecking=no ubuntu@172.31.36.171 ${dockerCmd}"
                          sh "wget https://github.com/Akil2020/cicd-project2/master/docker-compose.yaml"
                          sh "chmod 777 docker-compose.yaml"
-                         sh "${dockerCmd}"
-                    }
+                         sh "docker-compose up -d"
+                    //}
                 }
             }
         }
