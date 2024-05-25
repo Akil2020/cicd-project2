@@ -9,7 +9,7 @@ pipeline {
         
         stage("code"){
             steps{
-                git url: "https://github.com/Akil2020/cicd-project2/", branch: "master"
+                git url: "https://github.com/Akil2020/cicd-project2", branch: "master"
                 echo 'code cloned'
             }
         }
@@ -56,4 +56,3 @@ pipeline {
             }
         }
     }
-}
